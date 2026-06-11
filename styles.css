@@ -1,0 +1,568 @@
+/*** 
+     COLOR VARIABLES
+     Purpose:
+     - Stores reusable colors for the whole website
+     - Makes light mode and dark mode easier to manage
+***/
+:root {
+    --bg-color: #d2cff5;
+    --text-color: #231942;
+
+    --bg-color-dark-mode: #1f1f2e;
+    --text-color-dark-mode: #ffffff;
+
+    --accent-color-light: #d2cff5;
+    --accent-color-medium: #684fb5;
+    --accent-color-dark: #482f95;
+    --accent-color-darkest: #231942;
+    --accent-color-green: #28eb76;
+
+    --card-bg: #ffffff;
+    --card-bg-dark: #2b2b3d;
+    --link-color-dark: #9fd3ff;
+}
+
+
+/*** 
+     GLOBAL / PAGE STYLES
+     Purpose:
+     - Sets the main background, font, spacing, and page layout
+***/
+html {
+    background-color: var(--bg-color);
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: var(--text-color);
+    margin: 0;
+    padding: 90px 80px;
+    text-align: left;
+    min-height: 100vh;
+}
+
+
+/***
+     TEXT STYLES
+     Purpose:
+     - Styles headings and paragraph text
+***/
+h1 {
+    color: darkblue;
+    background-color: var(--accent-color-light);
+    font-size: 48px;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+h2 {
+    color: var(--accent-color-darkest);
+    font-size: 36px;
+    margin-top: 30px;
+}
+
+h3 {
+    color: var(--accent-color-dark);
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+h4 {
+    color: var(--text-color);
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+/*** 
+     LINK STYLES
+     Purpose:
+     - Styles links in normal, visited, hover, and active states
+***/
+a:link {
+    color: blue;
+    text-decoration: none;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover {
+    color: var(--accent-color-medium);
+    text-decoration: underline;
+}
+
+a:active {
+    color: red;
+}
+
+
+/*** 
+     BUTTON STYLES
+     Purpose:
+     - Styles all main buttons on the website
+***/
+button {
+    background-color: lightgreen;
+    color: black;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: var(--accent-color-green);
+    transform: scale(1.05);
+}
+
+/* Dark mode button */
+#theme-button {
+    background-color: var(--accent-color-dark);
+    color: white;
+}
+
+/* Header buttons */
+.header-button {
+    border: 2px solid green;
+    margin-right: 10px;
+}
+
+/* Reduce motion button */
+#reduce-motion-btn {
+    margin-left: 10px;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4b2aad;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#reduce-motion-btn:hover {
+    background-color: #2d176d;
+}
+
+
+/*** 
+     NAVBAR SECTION
+     Purpose:
+     - Keeps the navigation bar fixed at the top
+     - Styles navigation links
+***/
+.navbar ul {
+    list-style-type: none;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 15px 20px;
+    background-color: var(--accent-color-light);
+    z-index: 1000;
+}
+
+.navbar ul li {
+    float: left;
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: var(--accent-color-darkest);
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    color: var(--accent-color-medium);
+}
+
+
+/*** 
+     HEADER SECTION
+     Purpose:
+     - Styles the main header area
+     - Places header text and image side by side
+***/
+.header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    background-color: white;
+    padding: 25px;
+    margin-top: 90px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    text-align: left;
+}
+
+.header-item:nth-of-type(1) {
+    width: 55%;
+}
+
+.header-item:nth-of-type(2) {
+    width: 45%;
+}
+
+/* Main logo/header image */
+#header-img {
+    width: 140px;
+    max-width: 100%;
+    margin-bottom: 20px;
+    border: none;
+    display: block;
+}
+
+/* General image styling */
+img {
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+}
+
+
+/*** 
+     ARTICLE / RESOURCES SECTION
+     Purpose:
+     - Styles resource cards and articles
+***/
+article {
+    background-color: #eef1ff;
+    padding: 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+    margin-bottom: 20px;
+}
+
+article:hover {
+    background-color: #dcdcff;
+}
+
+article h3 {
+    margin-bottom: 5px;
+}
+
+article p {
+    margin-top: 0;
+    font-size: 16px;
+}
+
+
+/*** 
+     SCHEDULE SECTION
+     Purpose:
+     - Places schedule cards side by side
+***/
+.schedule-container {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.schedule-item {
+    flex: 1;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+
+/*** 
+     PROBLEM & SOLUTION SECTION
+     Purpose:
+     - Places the problem and solution cards side by side
+***/
+.problem-solution-container {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0 30px;
+}
+
+.problem-solution-item {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.problem-solution-item h2 {
+    margin-top: 0;
+}
+
+
+/*** 
+     WORKSHOP SECTION
+     Purpose:
+     - Places workshop cards side by side
+***/
+.workshop-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.workshop-item {
+    flex: 1;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+
+/***
+     RSVP SECTION
+     Purpose:
+     - Styles the RSVP section, participant list, and form
+***/
+.rsvp-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    padding-bottom: 25px;
+}
+
+.rsvp-para {
+    width: 55%;
+    padding-right: 10px;
+}
+
+.rsvp-participants {
+    width: 45%;
+    padding-right: 10px;
+}
+
+.form-container {
+    margin-top: 10px;
+}
+
+#rsvp-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+#rsvp-form input {
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+/* Error style for invalid RSVP inputs */
+.error {
+    border: 2px solid red !important;
+    background-color: #ffe6e6;
+}
+
+
+/*** 
+     SUCCESS MODAL
+     Purpose:
+     - Creates the popup that appears after a valid RSVP
+     - Darkens the rest of the screen
+     - Centers the modal content
+***/
+.modal {
+    display: none; /* Hidden by default until JavaScript changes it to flex */
+    position: fixed;
+    z-index: 2000;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+
+    background-color: rgba(0, 0, 0, 0.55);
+
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+/* The popup box in the middle of the screen */
+.modal-container {
+    padding: 32px 40px;
+    width: 100%;
+    max-width: 720px;
+
+    background-color: lavender;
+    color: black;
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+
+    border-radius: 15px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+}
+
+/* Text column on the left */
+.modal-text-column {
+    flex: 1.4;
+    text-align: left;
+}
+
+/* Image column on the right */
+.modal-image-column {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Each item inside the modal */
+.modal-item {
+    min-width: 0;
+}
+
+/* Personalized modal message */
+#modal-text {
+    margin: 0 0 8px 0;
+    font-size: 18px;
+    line-height: 1.6;
+    color: black;
+}
+
+/* Modal image that gets animated by JavaScript */
+#modal-img {
+    width: 180px;
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+/* Close modal button */
+#close-modal-btn {
+    margin-top: 15px;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4b2aad;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#close-modal-btn:hover {
+    background-color: #2d176d;
+}
+
+/* Stack modal content on smaller screens */
+@media (max-width: 640px) {
+    .modal-container {
+        flex-direction: column;
+        padding: 28px 24px;
+        text-align: center;
+    }
+
+    .modal-text-column {
+        text-align: center;
+    }
+
+    #modal-img {
+        width: 140px;
+    }
+}
+
+
+/*** 
+     FOOTER SECTION
+     Purpose:
+     - Keeps footer links fixed at the bottom of the page
+***/
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--accent-color-light);
+    text-align: center;
+    padding: 12px 0;
+    border-top: 2px solid var(--accent-color-medium);
+    font-size: 16px;
+}
+
+.footer a {
+    color: var(--accent-color-darkest);
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+
+/*** 
+     DARK MODE
+     Purpose:
+     - Changes background, text, cards, navbar, and footer colors
+     - Works with JavaScript because JS adds dark-mode to the body
+***/
+body.dark-mode {
+    background-color: var(--bg-color-dark-mode);
+    color: var(--text-color-dark-mode);
+}
+
+body.dark-mode .header-container,
+body.dark-mode .schedule-item,
+body.dark-mode .problem-solution-item,
+body.dark-mode .workshop-item,
+body.dark-mode article {
+    background-color: var(--card-bg-dark);
+    color: var(--text-color-dark-mode);
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode p,
+body.dark-mode li {
+    color: var(--text-color-dark-mode);
+}
+
+body.dark-mode .navbar ul {
+    background-color: #222;
+}
+
+body.dark-mode .footer {
+    background-color: #222;
+    border-top: 2px solid #444;
+}
+
+body.dark-mode a {
+    color: var(--link-color-dark);
+}
+
+body.dark-mode #theme-button {
+    border: 2px solid white;
+}
+
+/* Keeps modal readable even when dark mode is on */
+body.dark-mode .modal-container,
+body.dark-mode #modal-text {
+    color: black;
+}

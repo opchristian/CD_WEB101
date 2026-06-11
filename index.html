@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 
+         HEAD SECTION
+         Purpose:
+         - Sets page title
+         - Loads favicon
+         - Loads stylesheet
+    -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDOpoku_WEB101</title>
+
+    <link rel="icon" type="image/png" href="img/My_CRM_Logo.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- 
+         NAVBAR SECTION
+         Purpose:
+         - Main navigation links
+         - Dark mode toggle button
+         - Reduce motion button for accessibility
+    -->
+
+    <div class="navbar">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#journey">Journey Mapping</a></li>
+            <li><a href="#resources">Resources</a></li>
+            <li><a href="#rsvp">RSVP</a></li>
+            <li><button id="theme-button">Toggle Dark Mode</button></li>
+            <li><button id="reduce-motion-btn">Reduce Motion</button></li>
+        </ul>
+    </div>
+
+
+    <!-- 
+         HEADER SECTION
+         Purpose:
+         - Main page introduction
+         - Event logo
+         - YouTube video
+    -->
+
+    <div class="header-container">
+        <div class="header-item">
+            <img id="header-img" src="img/My_CRM_Logo.png" alt="CRM logo">
+
+            <h1>Customer Journey Design Workshop</h1>
+
+            <p>
+                Exploring how technology and strategy shape modern customer experiences.
+            </p>
+
+            <button class="header-button">Register Now</button>
+            <button class="header-button">View Agenda</button>
+        </div>
+
+        <div class="header-item">
+            <iframe
+                width="100%"
+                height="250"
+                src="https://www.youtube.com/embed/t8QM5zunC44"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+
+
+    <!-- 
+         ABOUT SECTION
+         Purpose:
+         - Brief event description
+    -->
+
+    <h2 id="about">About the Event</h2>
+
+    <p>
+        The Customer Journey Design Workshop is a hands-on learning experience focused on how
+        customer interactions are intentionally structured to improve retention, revenue, and
+        long-term growth.
+    </p>
+
+
+    <!-- 
+         PROBLEM & SOLUTION SECTION
+         Purpose:
+         - Explains the CRM knowledge gap and how this event addresses it
+    -->
+
+    <div class="problem-solution-container">
+        <div class="problem-solution-item">
+            <h2>The Problem</h2>
+            <p>
+                Many students, entrepreneurs, and early professionals do not fully understand what
+                CRM is, how it is used in the real business world, or how customer relationships
+                connect to growth, marketing, sales, and long-term success.
+            </p>
+        </div>
+
+        <div class="problem-solution-item">
+            <h2>The Solution</h2>
+            <p>
+                This website presents a 3-day CRM event designed to guide students, entrepreneurs,
+                and early professionals through the basics of CRM, customer journey mapping, and
+                real-world business strategy. It also connects attendees to helpful resources from
+                major companies and industry tools so they can keep learning after the event.
+            </p>
+        </div>
+    </div>
+
+
+    <!-- 
+         SCHEDULE SECTION
+         Purpose:
+         - Event agenda cards
+    -->
+
+    <h2 id="schedule">Event Schedule</h2>
+
+    <div class="schedule-container">
+        <div class="schedule-item">
+            <h3>CRM Briefing</h3>
+            <p>Introduction to CRM systems and customer journey fundamentals.</p>
+        </div>
+
+        <div class="schedule-item">
+            <h3>Journey Mapping</h3>
+            <p>Understanding customer touchpoints and experience flow.</p>
+        </div>
+
+        <div class="schedule-item">
+            <h3>Collaborative Workshop</h3>
+            <p>Hands-on teamwork to design better customer experiences.</p>
+        </div>
+    </div>
+
+
+    <!-- 
+         JOURNEY / WORKSHOP SECTION
+         Purpose:
+         - Visual examples for customer journey ideas
+    -->
+
+    <div class="workshop-container">
+        <div class="workshop-item">
+            <h3 id="journey">Journey Mapping Session</h3>
+            <p>This image shows how customer interactions move through connected stages.</p>
+            <img src="img/CRM_data1.png" alt="Journey mapping process">
+        </div>
+
+        <div class="workshop-item">
+            <h3>Collaborative Design Workshop</h3>
+            <p>This image represents collaboration and strategy building.</p>
+            <img src="img/CRM_data3.png" alt="Collaboration and strategy">
+        </div>
+    </div>
+
+
+    <!-- 
+         RESOURCES SECTION
+         Purpose:
+         - Helpful links related to CRM and customer journey design
+    -->
+
+    <h2 id="resources">Useful Links</h2>
+
+    <p>
+        Explore resources that connect customer journey strategy with the technology
+        and systems used to build modern digital experiences.
+    </p>
+
+    <article>
+        <a href="https://www.salesforce.com/crm/what-is-crm/" target="_blank">
+            <h3>What Is CRM? – Salesforce</h3>
+        </a>
+        <p>
+            This resource explains how CRM systems help organizations manage customer interactions,
+            track data across the customer lifecycle, and build stronger long-term relationships.
+        </p>
+    </article>
+
+    <article>
+        <a href="https://help.figma.com/hc/en-us/articles/14552901442839-Overview-Introduction-to-design-systems" target="_blank">
+            <h3>Introduction to Design Systems – Figma</h3>
+        </a>
+        <p>
+            This guide shows how design systems help teams build consistent digital products,
+            making it useful for understanding how customer experiences are implemented in practice.
+        </p>
+    </article>
+
+    <article>
+        <a href="https://blog.hubspot.com/service/customer-journey-map" target="_blank">
+            <h3>Customer Journey Mapping Guide</h3>
+        </a>
+        <p>
+            Learn how to create effective customer journey maps to improve user experience
+            and business strategy.
+        </p>
+    </article>
+
+    <article>
+        <a href="https://contentsquare.com/guides/customer-journey-map/" target="_blank">
+            <h3>Customer Journey Mapping – Contentsquare</h3>
+        </a>
+        <p>
+            This article shows how teams can build customer journey maps to better understand
+            user behavior and improve decision-making.
+        </p>
+    </article>
+
+
+    <!-- 
+         RSVP SECTION
+         Purpose:
+         - Shows current participants
+         - Includes RSVP form
+         - Updates count dynamically with JavaScript
+         - Opens success modal after valid submission
+    -->
+
+    <div id="rsvp">
+        <h2>RSVP</h2>
+
+        <p id="rsvp-count">⭐ 3 people have RSVP'd to this event!</p>
+
+        <div class="rsvp-container">
+            <div class="rsvp-para">
+                <p>
+                    We would be delighted to have you join us for the Customer Journey Design Workshop.
+                    This event is a chance to explore how organizations design meaningful customer
+                    experiences, strengthen relationships, and use CRM systems to support long-term
+                    growth. Whether you are interested in business strategy, technology, design, or
+                    teamwork, your participation will add value to the conversation. Complete the RSVP
+                    form below to reserve your place and become part of an engaging learning experience
+                    with others who are excited about innovation and customer-centered thinking.
+                </p>
+            </div>
+
+            <div class="rsvp-participants">
+                <p>🎟️ DJ from Texas has RSVP'd.</p>
+                <p>🎟️ Amy from New York has RSVP'd.</p>
+                <p>🎟️ Teresa from Montana has RSVP'd.</p>
+            </div>
+        </div>
+
+        <div class="form-container">
+            <form id="rsvp-form" title="rsvp-form">
+                <input type="text" id="name" name="name" placeholder="Name">
+                <input type="text" id="state" name="state" placeholder="Home State">
+                <input type="email" id="email" name="email" placeholder="Email">
+
+                <button id="rsvp-button" type="submit">Submit RSVP</button>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- 
+         SUCCESS MODAL
+         Purpose:
+         - Appears after a user successfully submits the RSVP form
+         - Shows a personalized message
+         - Displays an image that can animate with JavaScript
+
+         When To Modify:
+         - Project 9 required feature
+         - Project 9 stretch feature
+         - Any time after
+    -->
+
+    <div id="success-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-text" aria-hidden="true">
+        <div class="modal-container">
+            <div class="modal-item modal-text-column" id="modal-text-container">
+                <p id="modal-text">Mission Completed! Thank you for RSVPing! We are excited to see you at the CRM event.</p>
+                <button id="close-modal-btn" type="button">Close</button>
+            </div>
+
+            <div class="modal-item modal-image-column">
+                <img id="modal-img" src="img/My_CRM_Logo.png" alt="CRM logo">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 
+         FOOTER SECTION
+         Purpose:
+         - Quick contact and extra link
+    -->
+
+    <div class="footer">
+        <a href="https://blog.hubspot.com/service/customer-journey-map" target="_blank">Learn More</a>
+        <a href="mailto:opokudwamenachristian@gmail.com">Email Our Team</a>
+    </div>
+
+
+    <!-- 
+         JAVASCRIPT SECTION
+         Purpose:
+         - Loads the JavaScript after the HTML elements exist
+    -->
+
+    <script src="index.js"></script>
+</body>
+</html>
