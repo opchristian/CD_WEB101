@@ -33,4 +33,4 @@ https://happy-sapphire-model-114.vscodeedu.app
 
 ## Author
 
-Christian Dwamena Opoku
+Christian Dwamenah Opoku
